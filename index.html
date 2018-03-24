@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ELITEX test</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id="content-box">
+		<div id="head-content">
+			<h2>Expenses <i onclick="arrowFunction()" class="down" id='arrows'></i></h2>
+		</div>
+
+		<table id="myTable">
+			<thead>
+				  <tr class="header-table">
+				    <th style="width:60%;" id="nabename" onclick="sortTable(0)">Name</th>
+				    <th style="width:40%;">Amount</th>
+				  </tr>
+			</thead>
+			<tbody id='tbody'>	  
+				  <tr class="trrow">
+				    <td class="namedata">Dinner</td>
+				    <td class="costdata">$ 23.50</td>
+				  </tr>
+				  <tr class="trrow">
+				    <td class="namedata">Lunch</td>
+				    <td class="costdata">$ 17.99</td>
+				  </tr>
+				  <tr class="trrow">
+				    <td class="namedata">Space Hulk</td>
+				    <td class="costdata">$ 12.99</td>
+				  </tr>
+			</tbody>  
+			<tfoot>
+				<tr class="footer">
+				    <td><input type="text" id="myInput" placeholder="Name..."></td>
+				    <td><input type="number" id="myCost" placeholder="$..."><span onclick="newElement()" class="addBtn">+</span></td>
+				 </tr>
+				<tr class="total">
+				    <td>Total</span></td>
+				    <td id="totalsum"> </td>
+				  </tr>			
+			</tfoot>
+
+		</table>
+
+		
+		
+
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>

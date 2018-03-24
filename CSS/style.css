@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/********************************/
+#content-box{
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (max-device-width: 780px){
+  #content-box{
+  width: 80%;
+  margin: 0 auto;
+}
+}
+@media screen and (max-width: 780px){
+#content-box{
+  width: 80%;
+  margin: 0 auto;
+}}
+
+@media screen and (max-device-width: 480px){
+   #content-box{
+  width: 95%;
+  margin: 0 auto;
+}
+}
+@media screen and (max-width: 480px){
+#content-box{
+  width: 95%;
+  margin: 0 auto;
+}}
+
+/* HEADER AND FOOTER */
+#head-content{
+    padding: 10px 40px;
+    color: #04D399;
+    text-align: center;
+}
+.footer {
+    background: repeating-linear-gradient(135deg, 
+    rgba(45,45,45, .4), rgba(45,45,45, .4) 10px, white 0, white 20px);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*input */
+input {
+    border: none;
+    width: 40%;
+    padding: 10px;
+    margin-left: 5px; 
+    float: left;
+    font-size: 16px;
+}
+
+/* Style the "Add" and "Sum" button */
+.addBtn {
+    padding: 10px;
+    width: 20%;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+.sumBtn{
+    padding: 10px;
+    width: 20%;
+    background: #2D090B;
+    color: red;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/********************Head arrow****************************/
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+}
+
+/*************************************TABLE****************************************************/
+
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+    border: 1px solid #ddd; 
+    font-size: 18px;
+    position: relative;
+}
+
+#myTable th, #myTable td {
+    text-align: left; 
+    padding: 12px; 
+}
+
+#myTable tr {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable .trrow:hover {
+    background-color: #f1f1f1;
+}
+
+.header-table{
+	
+	background: repeating-linear-gradient(135deg, 
+    rgba(78,179,128, .4), rgba(78,179,128, .4) 5px, white 0, white 10px);
+}
+.total{
+	color: red;
+}
